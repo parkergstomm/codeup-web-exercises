@@ -7,6 +7,7 @@ alert("Welcome to my Website!"); //It works!
 
 //Now we use prompt() to ask for the users favorite color - then an alert response that that color is your favorite color as well.
 var favColor = "blue";
+
 prompt("What is your favorite color?");
 
 alert("Hey! " + favColor + " is my favorite color too!");
