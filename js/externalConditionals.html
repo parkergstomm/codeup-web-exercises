@@ -22,28 +22,28 @@
         // execute this code
         // }
 
-        if(true) {
-            alert("I should see this");
-        }
+     //   if(true) {
+      //      alert("I should see this");
+     //   }
 
-        if(false){
-            alert("I would not see this");
-        }
+     //   if(false){
+     //       alert("I would not see this");
+     //   }
 
         //from here, we need to expand into the condition (the parenthesis) and look into various ways to talk to it
 
 
-        var random = Math.floor((Math.random() * 3) + 1); // Gives us a num between on 1 and 3
+     //   var random = Math.floor((Math.random() * 3) + 1); // Gives us a num between on 1 and 3
 
-        console.log(random);
+      //  console.log(random);
 
-        if(random === 2){ //our condition can be a boolean expression that boils down to two...
+     //   if(random === 2){ //our condition can be a boolean expression that boils down to two...
 
-            alert("Random is the number two");
+      //      alert("Random is the number two");
 
-        }
+     //   }
 
-        var isItRaining = confirm("Is it raining in Knoxville?");
+     //   var isItRaining = confirm("Is it raining in Knoxville?");
 
         // if(isItRaining){
         //    alert("Get your umbrella!");
@@ -51,43 +51,76 @@
 
         //refactor - add in something else
 
-        if(isItRaining){
-            alert("Go get an umbrella!");
-        }   else {
-            alert("Sweet! lets go on a walk!");
-        }
+     //   if(isItRaining){
+      //      alert("Go get an umbrella!");
+       // }   else {
+     //       alert("Sweet! lets go on a walk!");
+     //   }
 
-        if(random === 2){
-            alert("I love the number 2 - what a great number.");
-        }   else {
-            alert("Woooow, thats not the number 2.")
-        }
+     //   if(random === 2){
+     //       alert("I love the number 2 - what a great number.");
+     //   }   else {
+      //      alert("Woooow, thats not the number 2.")
+      //  }
 
 
         //re-refactor isTwo.. for multiple paths!
 
-        if(random === 2){
-            alert("Partay - time!! The number is TWO");
-        }   else (random === 1){
-            alert("Ah, a number 1");
-        } else if (random === 3){
-            alert("threeeeeee");
-        }
+        // if(random === 2){
+        //    alert("Partay - time!! The number is TWO");
+      //  }   else (random === 1){
+       //     alert("Ah, a number 1");
+      //  } else if (random === 3){
+      //      alert("threeeeeee");
+       // }
 
 
         //if-else if-else
-
+        // var lunchTime = prompt("What do you want for lunch? hint: the answer is 'enchiladas'")
+        //
+        // if(lunchTime === "enchiladas"){
+        //     alert("Ab-so-lute-ly lets GO, taqueria time, I'm buying");
+        // } else if (lunchTime === "lobster mac"){
+        //     alert("Ooo nice - pretty delicious! I don't have lobster a lot");
+        // } else if (lunchTime === "carnitas"){
+        //     var whatKindOfSalsa = prompt("What kind of salsa will you have with it?");
+        //
+        //     if(whatKindOfSalsa === "red"){
+        //         alert("Red salsa and carnitas! Awesome combo!");
+        //     } else if (whatKindOfSalsa === "tomatillo"){
+        //         alert("Very good - can be a little spicy!")
+        //     } else {
+        //     alert("Always good with some lime and salsa - tacos with carnitas and " + whatKindOfSalsa + " salsa!");
+        //     }
+        //
+        // } else if (lunchTime === "grilled cheese"){
+        //     alert("Grilled cheese - classic!");
+        // } else {
+        //     alert(lunchTime + "? That sounds interesting - haven't had that before!");
+        // }
 
         //ternary - we can take the IF ELSE and make it a ONE LINER, ternary
 
-        var isItRaining = confirm("Is it raining outside?");
+        // var isItRaining = confirm("Is it raining outside?");
 
         // if(condition) {}
         // else {}
 
-        (isItRaining) ? alert("go get your umbrella!") : "Nice! lets go for walk.";
+       // (isItRaining) ? alert("go get your umbrella!") : "Nice! lets go for walk.";
 
+       // var pizzaPreference = prompt("What kind of pizza do you like?");
 
+       // switch(pizzaPreference) {
+       //     case "pineapple and hot sauce": //if it was this.. do the following
+       //         alert("What a coincidence, that's my favorite!");
+       //         break;
+       //     case "cheese": // if it was this.. do the following
+       //         alert("Just plain cheese? Okay...");
+        //        break;
+        //    default: //does this if nothing else matched, none of the ther cases were true
+         //       alert(pizzaPreference + " isn't my favorite, but let's order some!");
+        //        break;
+      //  }
 
     </script>
 </body>
