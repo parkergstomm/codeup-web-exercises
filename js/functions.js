@@ -24,6 +24,12 @@ function sayHello(name){
  *
  * console.log 'helloMessage' to check your work
  */
+// call my function
+// use my name as a string < as the input / the argument
+// the result! the return needs to end up var named "helloMessage"
+// after alll the above: console.log the var
+
+
 var helloMessage = sayHello("Parker");
 
 console.log(helloMessage);
