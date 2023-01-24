@@ -70,6 +70,18 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
+ switch(randomColor) {
+    case "red": //if it was this.. do the following
+       console.log("Strawberries are red")
+         break;
+     case "blue": // if it was this.. do the following
+         console.log("The sky is blue!");
+        break;
+    default: //does this if nothing else matched, none of the ther cases were true
+       console.log( randomColor + " isnt a color im familar with.");
+        break;
+  }
+
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
