@@ -41,6 +41,7 @@ console.log(helloMessage);
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
 var myName = "Parker";
 
 console.log(sayHello(myName));
