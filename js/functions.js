@@ -8,8 +8,14 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
+// task out the word problem, dont get caught up in the problem!
+
+// name of function < name is sayHello
+// one parameter < label should be 'name'
+// return a string < string should cocatenate "Hello, " + the input / the argument
 function sayHello(name){
-    return ("Hello, " + name);
+
+    return "Hello, " + name + "!";
 }
 /**
  * TODO:
@@ -109,9 +115,13 @@ alert("Alright, looks like you will need to tip $" + dollarAmountToTip + " in or
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-function applyDiscount(originalPrice, discountPercentage) {
-    var discount = originalPrice * discountPercentage;
-    return originalPrice - discount;
+var discountPercentage = .2;
+var originalPrice = 100;
+
+function applyDiscount(originalPrices, discountPercentages) {
+    var discountP = originalPrice * discountPercentage;
+    return originalPrice - discountP;
 }
+console.log(applyDiscount(100, .2))
 
 
