@@ -69,10 +69,22 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+
+// named function - isTwo
+// parameter - a number
+// should return IF inputNumber = = = 2 is true
+// otherwise false
+
+
 function isTwo(number){
+
     return number === 2;
 }
-console.log(random);
+
+// call the function with a variable 'random' from line 55
+// console.log the work
+
+console.log("Hi, this is a random number: " + random);
 console.log(isTwo(random));
 
 /**
