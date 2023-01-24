@@ -142,13 +142,20 @@ alert("Alright, looks like you will need to tip $" + dollarAmountToTip + " in or
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-var discountPercentage = .2;
-var originalPrice = 100;
+// create a function applyDiscount to accept price
+    //  two parameter - totalPrice, discountPercent
+    // return the adjusted price of total reflecting the discount provided
+    //e.g., 100 with the adjusted price is 80
 
-function applyDiscount(originalPrices, discountPercentages) {
-    var discountP = originalPrice * discountPercentage;
-    return originalPrice - discountP;
+
+
+function applyDiscount(totalPrice, discountPercent){
+    //v1
+    // var mathBucket = totalPrice - (totalPrice * discountPercent);
+
+    // return mathBucket;
+
+    return totalPrice - (totalPrice * discountPercent);
 }
-console.log(applyDiscount(100, .2))
 
 
