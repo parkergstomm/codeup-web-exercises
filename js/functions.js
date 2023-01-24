@@ -98,23 +98,31 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+
+
 function calculateTip(percentage, total){// keyword nameofFunction(input or param of function) {body of function} <return statement /whatever is beyond return is the outcome
     return percentage * total;
 
 }
-console.log(calculateTip(.20,30));//should be 6
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+//alert the user for practice
+// two prompts, how much did you pay? how much do you want tot tip?
+// two variables to save result of prompts
+//an alert! an alert using using my calculateTip function to show the result of the math
+
 alert("Hey there, thanks for eating with us today! We have a simple tip calculator built in for your convenience. Just hit okay and answer some questions!");
 
 var mealTotal = Number(prompt("How much was your meal today?"));//creating a variable named mealTotal and asking the user by prompt what the total cost of the meal was
-var tipAmount = Number(prompt("What percentage would you like to tip today?"));// creating a variable named tipAmount and prompting the user to put in the number that they want to tip
-var tipTotal = tipAmount/100; // their number that they want to tip is divided by 100
-var dollarAmountToTip = calculateTip(tipTotal, mealTotal).toFixed(2); //
+var tipAmountDecimal = Number(prompt("What percentage would you like to tip today?"));// creating a variable named tipAmount and prompting the user to put in the number that they want to tip in decimals
+
+var dollarAmountToTip = calculateTip(tipAmountDecimal, mealTotal).toFixed(2); //
 
 alert("Alright, looks like you will need to tip $" + dollarAmountToTip + " in order to get that percentage. Thanks again for eating with us!")
 
