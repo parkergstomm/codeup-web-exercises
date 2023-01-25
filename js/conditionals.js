@@ -24,24 +24,24 @@
 // function < analyzeColor
     // string < 'colorName' as input
 
- function analyzeColor(colorName) {
-     if (colorName === "red") {
-         return "Strawberries are red";
-     } else if (colorName === "blue") {
-         return "the sky is blue";
-     } else if (colorName === "green") {
-         return "the grass is green.. sometimes";
-     } else if (colorName === "indigo") {
-         return "that is... *googles* basically violet lol";
-     } else if (colorName === "violet") {
-         return "basically indigo but more purple";
-     } else if (colorName === "yellow") {
-         return " yellow is that one color on a red light that means slow down to stop for the red, but really means 'speed up to not be stuck at the light!'"
-     }
-        else {
-         return "Hmm, dont know anything about that color";
-     }
- }
+ // function analyzeColor(colorName) {
+ //     if (colorName === "red") {
+ //         return "Strawberries are red";
+ //     } else if (colorName === "blue") {
+ //         return "the sky is blue";
+ //     } else if (colorName === "green") {
+ //         return "the grass is green.. sometimes";
+ //     } else if (colorName === "indigo") {
+ //         return "that is... *googles* basically violet lol";
+ //     } else if (colorName === "violet") {
+ //         return "basically indigo but more purple";
+ //     } else if (colorName === "yellow") {
+ //         return " yellow is that one color on a red light that means slow down to stop for the red, but really means 'speed up to not be stuck at the light!'"
+ //     }
+ //        else {
+ //         return "Hmm, dont know anything about that color";
+ //     }
+ // }
 
 
 
@@ -122,21 +122,21 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 
-function calculateTotal(luckyNumber, total) {
-    if (luckyNumber === 0) {
-        return total;
-    } else if (luckyNumber === 1) {
-        return total * .1;
-    } else if (luckyNumber === 2) {
-        return total * .25;
-    } else if (luckyNumber === 3) {
-        return total * .35;
-    } else if (luckyNumber === 4) {
-        return total * .5;
-    } else if (luckyNumber === 5) {
-        return 0;
-    }
-}
+// function calculateTotal(luckyNumber, total) {
+//     if (luckyNumber === 0) {
+//         return total;
+//     } else if (luckyNumber === 1) {
+//         return total * .1;
+//     } else if (luckyNumber === 2) {
+//         return total * .2;
+//     } else if (luckyNumber === 3) {
+//         return total * .35;
+//     } else if (luckyNumber === 4) {
+//         return total * .5;
+//     } else if (luckyNumber === 5) {
+//         return 0;
+//     }
+// }
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -145,8 +145,11 @@ function calculateTotal(luckyNumber, total) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+ //Generate a random number between 0 and 6
+ var luckyNumber = Math.floor(Math.random() * 6);
+
+ // var bill = prompt("What was your total bill?");
+ // alert("your lucky number is " + luckyNumber + "! " + "your price before your discount was $" + bill + ", and your price after the lucky number discount is $" + calculateTotal(luckyNumber,bill));
 
 /**
  * TODO:
@@ -166,3 +169,24 @@ function calculateTotal(luckyNumber, total) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+// [x] create a variable ____ and confirm the user if they would like to enter a number / console.log it
+    // [x] IF okay - prompt (ask) the user ask the user for a number / console.log it
+// [] use 3 alerts below to tell the user:
+    // [] ALERT - if the number was odd or even
+    // [] ALERT - what the number plus 100 is
+    // [] ALERT - if it was negative or positive
+// [] ALERT THE USER if the user enters a value that is not of the number data type. (alert "incorrect input data type")
+
+var numberConfirm = confirm("would you like to enter a number?");
+    if(numberConfirm === true) {
+        prompt("enter a number below");
+        console.log(numberConfirm);
+    } else if(numberConfirm === false)
+      alert("Alright then.");
+    else {
+        alert("incorrect input data type.")
+    }
+    if(numberConfirm % 2 === 0){
+        alert(numberConfirm + " is even")
+    }
+
