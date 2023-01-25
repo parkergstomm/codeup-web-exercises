@@ -24,17 +24,24 @@
 // function < analyzeColor
     // string < 'colorName' as input
 
-function analyzeColor(colorName) {
-    if (colorName === "red") {
-        return "Strawberries are red";
-    } else if (colorName === "blue") {
-        return "the sky is blue";
-    }
-
-else {
-        return "Hmm, dont know anything about that color";
-    }
-}
+ function analyzeColor(colorName) {
+     if (colorName === "red") {
+         return "Strawberries are red";
+     } else if (colorName === "blue") {
+         return "the sky is blue";
+     } else if (colorName === "green") {
+         return "the grass is green.. sometimes";
+     } else if (colorName === "indigo") {
+         return "that is... *googles* basically violet lol";
+     } else if (colorName === "violet") {
+         return "basically indigo but more purple";
+     } else if (colorName === "yellow") {
+         return " yellow is that one color on a red light that means slow down to stop for the red, but really means 'speed up to not be stuck at the light!'"
+     }
+        else {
+         return "Hmm, dont know anything about that color";
+     }
+ }
 
 
 
@@ -69,26 +76,29 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-
- switch(randomColor) {
-    case "red": //if it was this.. do the following
-       console.log("Strawberries are red")
-         break;
-     case "blue": // if it was this.. do the following
-         console.log("The sky is blue!");
-        break;
-    default: //does this if nothing else matched, none of the ther cases were true
-       console.log( randomColor + " isnt a color im familar with.");
-        break;
-  }
-
+// function analyzeColor(color) {
+//     switch (color) {
+//         case "red": //if it was this.. do the following
+//             console.log("Strawberries are red")
+//             break;
+//         case "blue": // if it was this.. do the following
+//             console.log("The sky is blue!");
+//             break;
+//         default: //does this if nothing else matched, none of the other cases were true
+//             console.log(color + " isnt a color im familar with.");
+//             break;
+//     }
+// }
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
- */
-
+//  */
+// var userColor = prompt("Hey you, what's your favorite color?");
+// if(analyzeColor) {
+//
+// }
 /* ########################################################################## */
 
 /**
@@ -111,6 +121,22 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+
+function calculateTotal(luckyNumber, total) {
+    if (luckyNumber === 0) {
+        return total;
+    } else if (luckyNumber === 1) {
+        return total * .1;
+    } else if (luckyNumber === 2) {
+        return total * .25;
+    } else if (luckyNumber === 3) {
+        return total * .35;
+    } else if (luckyNumber === 4) {
+        return total * .5;
+    } else if (luckyNumber === 5) {
+        return 0;
+    }
+}
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
