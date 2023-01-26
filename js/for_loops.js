@@ -58,22 +58,42 @@
 
 //three layers
 
-function sayHello(){
-    alert("Hello!");
-}
-
-
-
-//Codeup for Exercise
-//Create a function named showMultiplicationTable that accepts a number and console.logs the multiplication table for that number (just multiply by the numbers 1 through 10)
-
-// function showMultiplicationTable(){
-//     var number = ;
-//      for (var i = 1; i <= 10; i++){
-//          var result = i + number;
-//          console.log(number + " * " + i + " = " + result)
-//      }
+// function sayHello(){
+//     alert("Hello!");
+// }
 //
+// for (var i = 0; i<= 5; i++){
+//     sayHello();
+// }
+//
+// //four layers
+//
+// function myCount(numberToCountTo){
+//     for(let i = 0; i < numberToCountTo; i++){
+//         console.log(i);
+//
+//         //refactor w/ continue;
+//
+//         if (i % 2 === 0){
+//             alert("Even numbers are cool");
+//             alert("i is currently " + i);
+//         } else {
+//             alert("odd numbers are weird!, skipping the rest of the code but NOT breaking out of the loop.")
+//             continue; // I want to CONTINUE LOOPING, but hop back to the 'start' of my loop (for loop will start with the condition check again).
+//             alert("Will you see me? I am the alert below continue in the else on line 80.")
+//         }
+//
+//         //refactor with break;
+//
+//         if (i === 13){
+//             alert("Oops - hit a favorite number!");
+//             break; //break me out of the loop
+//         } else if (i === 15){
+//             alert("will the break stop it?");
+//         }
+//     }
+//
+//     alert("Hey, we finished counting!");
 // }
 
 //While Loops
@@ -120,3 +140,67 @@ function sayHello(){
 
 
 
+
+
+//Codeup for Exercises
+
+//1. Create a function named showMultiplicationTable that accepts a number and console.logs the multiplication table for that number (just multiply by the numbers 1 through 10)
+
+// function showMultiplicationTable(){
+//     var number = parseInt(prompt("Enter a number: "));
+//      for (var i = 1; i <= 10; i++){
+//          var result = i * number;
+//          console.log(number + " * " + i + " = " + result)
+//      }
+//
+// }
+
+// function showMultiplicationTable(x){
+//     for (var i = 0; i <= 10; i++){
+//         var num = x + " * " + i + " = " + x * i;
+//         console.log(num);
+//     }
+//     return "Complete";
+// }
+
+// 2. Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even.
+
+//
+// var randNum = Math.round(Math.random() * 200) + 1;
+//
+// function randomTen(num){
+//     for (var i = 20; i <= 200; i++){
+//
+//         if( i % 2 === 0){
+//             console.log(i + " is even");
+//         } else {
+//             console.log(i + " is odd");
+//         }
+//
+//     }
+//
+// }
+
+
+// 3.Create a for loop that uses console.log to create the output shown below.
+
+
+// pattern variable carries the final pattern in string format
+//  let pattern = "";
+//
+// // outer loop runs for `rows` no. of times
+// for (let n = 1; n <= 9; n++) {
+//     for (let num = 1; num <= n; num++) {
+//         pattern += n; //
+//     }
+//     // Add a new line character after contents of each line
+//         pattern += "\n";
+// }
+// console.log(pattern);
+
+
+// 4. Create a for loop that decrements by 5 starting at 100 and ending at 5.
+
+for (var i = 100; i > 0; i -= 5) {
+    console.log(i);
+}
