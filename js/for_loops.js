@@ -155,34 +155,59 @@
 //
 // }
 
-// function showMultiplicationTable(x){
-//     for (var i = 0; i <= 10; i++){
-//         var num = x + " * " + i + " = " + x * i;
-//         console.log(num);
-//     }
-//     return "Complete";
-// }
+function showMultiplicationTable(x){
+    for (var i = 0; i <= 10; i++){
+        var num = x + " * " + i + " = " + x * i;
+        console.log(num);
+    }
+    return "Complete";
+}
 
 // 2. Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even.
 
+
+var randNum = Math.round(Math.random() * 200) + 1;
+
+function randomTen(num){
+    for (var i = 20; i <= 200; i++){
+
+        if( i % 2 === 0){
+            console.log(i + " is even");
+        } else {
+            console.log(i + " is odd");
+        }
+
+    }
+
+}
+
+// if the var is outside, it will only generate 1 number 10 times / if it is inside, it will generate 10 numbers 10 times
+
+for (var i=0; i<10; i++){
+    var random = Math.floor((Math.random() * 180) + 20)
+    if(random % 2 === 0){
+        console.log(random + " is even.");
+    } else {
+        console.log(random + " is odd.");
+    }
+}
+
+// 3.Create a for loop that uses console.log to create the output shown below.
+
 //
-// var randNum = Math.round(Math.random() * 200) + 1;
-//
-// function randomTen(num){
-//     for (var i = 20; i <= 200; i++){
-//
-//         if( i % 2 === 0){
-//             console.log(i + " is even");
-//         } else {
-//             console.log(i + " is odd");
-//         }
-//
-//     }
-//
+for (var i = 1; i<=9; i++){
+    var iString = "";
+    for(var n=1; n<=i; n++){
+       iString += i;
+    }
+    console.log(iString);
+}
+
+// for(var i=1; i<=9; i++);{
+//     console.log(i.toString().repeat(i))
 // }
 
 
-// 3.Create a for loop that uses console.log to create the output shown below.
 
 
 //    //pattern variable carries the final pattern in string format
@@ -201,8 +226,8 @@
 
 // 4. Create a for loop that decrements by 5 starting at 100 and ending at 5.
 
-// for (var i = 100; i > 0; i -= 5) {
-//     console.log(i);
-// }
+for (var i = 100; i >= 5; i -= 5) {
+    console.log(i);
+}
 
 

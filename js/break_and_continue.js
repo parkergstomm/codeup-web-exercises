@@ -11,6 +11,9 @@ function oddOneOrFifty() {
     console.log("Here is an odd number: " + i);
     } if (num === 27){
         console.log("Yikes! skipping number: " + num);
-    } else (num = !NaN)
-        console.log("Invalid input! Pick a number")
+        break;
+    } else {
+        
+    }
+
 }
