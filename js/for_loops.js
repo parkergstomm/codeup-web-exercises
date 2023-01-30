@@ -185,7 +185,7 @@
 // 3.Create a for loop that uses console.log to create the output shown below.
 
 
-// pattern variable carries the final pattern in string format
+//    //pattern variable carries the final pattern in string format
 //  let pattern = "";
 //
 // // outer loop runs for `rows` no. of times
@@ -201,6 +201,8 @@
 
 // 4. Create a for loop that decrements by 5 starting at 100 and ending at 5.
 
-for (var i = 100; i > 0; i -= 5) {
-    console.log(i);
-}
+// for (var i = 100; i > 0; i -= 5) {
+//     console.log(i);
+// }
+
+
