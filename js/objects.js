@@ -1,0 +1,221 @@
+// "use strict";
+//
+// var car = {};
+//
+// console.log(typeof car);
+// // "object"
+
+// "use strict";
+//
+// var car = {};
+
+// use dot notation to assign a "make" property
+// car.make = "Toyota";
+
+// use array notation to assign a "model" property
+// car["model"] = "Camry";
+
+// can also assign properties to an object when creating it
+
+// var car = {
+//     make: "Toyota",
+//     model: "Camry"
+// };
+
+// Accessing Properties on an Object:
+// object properties are accessed in the same way they are set, either via dot notation or array notation.
+// "use strict";
+//
+// var car = {};
+// car.make = "Toyota";
+// car.model = "Camry";
+
+// use array notation to access "make" property
+// console.log("The car make is: " + car["make"]);
+
+// use dot notation to access "model" property
+// console.log("The car model is: " + car.model);
+
+// Nested Values:
+// The value of a property can be any valid value in JavaScript, including arrays, or other objects. This allows us to create complex data structures like the following:
+// let cars = [
+//     {
+//         make: "Toyota",
+//         model: "C-HR",
+//         year: "2018",
+//         color: "Blue",
+//         features: ["Automatic Windows", "Bluetooth", "GPS Navigation", "Dent on the right side"],
+//         owner: {
+//             name: "Parker Stomm",
+//             age: 24
+//         }
+//     },
+//     {
+//         make: "Mazda",
+//         model: "5",
+//         year: "2012",
+//         color: "Silver",
+//         features: ["Automatic Windows", "Great Gas Mileage", "AM/FM Radio", "Bad Alternator"],
+//         owner: {
+//             name: "Brandie Stomm",
+//             age: 24
+//         }
+//     }
+// ];
+//
+// console.log("The first car is a " + cars[0].make + " " + cars[0].model + ".");
+// console.log("The owner of the first car is " + cars[0].owner.name + ", " + "and the owner of the second car is " + cars[1].owner.name + ".");
+//
+// console.log("Here is all of the features for all of the cars: ");
+// cars.forEach(function(car){
+//     car.features.forEach(function(feature){
+//         console.log(feature);
+//     });
+// });
+
+// Assigning Functionality to an Object
+// Besides having data properties, an object can also have functions, known as methods. Creating a method on a object is much like creating a property, except the property value is a function.
+
+// "use strict";
+//
+// var car = {};
+// car.make = "Toyota";
+// car.model = "C-HR";
+
+//create a honk method on the car
+// car.honk = function(){
+//     alert("Honk! Honk!");
+// };
+
+//use the honk method to use the horn
+// car.honk();
+
+// The 'this' Keyword
+// The 'this' keyword in JavaScript is a bit more complicated than in other languages. In other languages, like PHP or Java, this is simply a reference to the current object. In JavaScript, this can refer to a different object based on how a function is called. However, the intricacies of this are a more advanced topic.
+
+// "use strict";
+//
+// var car = {};
+// car.make = "Toyota";
+// car.model = "C-HR";
+
+// create a logMakeModel method on the car object
+// car.logMakeModel = function (){
+//     console.log("The Car make/model is: " + this.make + " " + this.model);
+// };
+
+// log the make and model
+// car.logMakeModel();
+
+(function() {
+    "use strict";
+
+    /**
+     * TODO:
+     * Create an object with firstName and lastName properties that are strings
+     * with your first and last name. Store this object in a variable named
+     * `person`.
+     *
+     * Example:
+     *  > console.log(person.firstName) // "Rick"
+     *  > console.log(person.lastName) // "Sanchez"
+     */
+
+    /**
+     * TODO:
+     * Add a sayHello method to the person object that returns a greeting using
+     * the firstName and lastName properties.
+     * console.log the returned message to check your work
+     *
+     * Example
+     * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
+     */
+
+    /** TODO:
+     * HEB has an offer for the shoppers that buy products amounting to
+     * more than $200. If a shopper spends more than $200, they get a 12%
+     * discount. Write a JS program, using conditionals, that logs to the
+     * browser, how much Ryan, Cameron and George need to pay. We know that
+     * Cameron bought $180, Ryan $250 and George $320. Your program will have to
+     * display a line with the name of the person, the amount before the
+     * discount, the discount, if any, and the amount after the discount.
+     *
+     * Uncomment the lines below to create an array of objects where each object
+     * represents one shopper. Use a foreach loop to iterate through the array,
+     * and console.log the relevant messages for each person
+     */
+
+    // var shoppers = [
+    //     {name: 'Cameron', amount: 180},
+    //     {name: 'Ryan', amount: 250},
+    //     {name: 'George', amount: 320}
+    // ];
+
+    /** TODO:
+     * Create an array of objects that represent books and store it in a
+     * variable named `books`. Each object should have a title and an author
+     * property. The author property should be an object with properties
+     * `firstName` and `lastName`. Be creative and add at least 5 books to the
+     * array
+     *
+     * Example:
+     * > console.log(books[0].title) // "The Salmon of Doubt"
+     * > console.log(books[0].author.firstName) // "Douglas"
+     * > console.log(books[0].author.lastName) // "Adams"
+     */
+
+    /**
+     * TODO:
+     * Loop through the books array and output the following information about
+     * each book:
+     * - the book number (use the index of the book in the array)
+     * - the book title
+     * - author's full name (first name + last name)
+     *
+     * Example Console Output:
+     *
+     *      Book # 1
+     *      Title: The Salmon of Doubt
+     *      Author: Douglas Adams
+     *      ---
+     *      Book # 2
+     *      Title: Walkaway
+     *      Author: Cory Doctorow
+     *      ---
+     *      Book # 3
+     *      Title: A Brief History of Time
+     *      Author: Stephen Hawking
+     *      ---
+     *      ...
+     */
+
+    /**
+     * Bonus:
+     * - Create a function named `createBook` that accepts a title and author
+     *   name and returns a book object with the properties described
+     *   previously. Refactor your code that creates the books array to instead
+     *   use your function.
+     * - Create a function named `showBookInfo` that accepts a book object and
+     *   outputs the information described above. Refactor your loop to use your
+     *   `showBookInfo` function.
+     */
+
+})();
+
+
+
+//[] create object that has firstName and lastName properties with my name
+//[] store it in a variable named 'person'
+
+var person = {};
+person.firstName = "Parker";
+person.lastName = "Stomm";
+
+
+
+
+
+
+
+
+
