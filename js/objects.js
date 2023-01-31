@@ -236,10 +236,6 @@ console.log("Exercise 3: ");
 // george bought $320
 // will need to display a line with the name of the person, the amount before discount, the discount(if any), and amount after discount.
 
-// * Uncomment the lines below to create an array of objects where each object
-// * represents one shopper. Use a foreach loop to iterate through the array,
-// * and console.log the relevant messages for each person
-// */
 
 // var shoppers = [
 //     {name: 'Cameron', amount: 180},
@@ -265,3 +261,106 @@ console.log("Exercise 3: ");
 console.log("Not done, Will come back to 3.");
 
 console.log("Exercise 4: ");
+
+
+// * Create an array of objects that represent books and store it in a
+// * variable named `books`. Each object should have a title and an author
+// * property. The author property should be an object with properties
+// * `firstName` and `lastName`. Be creative and add at least 5 books to the
+// * array
+// *
+// * Example:
+// * > console.log(books[0].title) // "The Salmon of Doubt"
+// * > console.log(books[0].author.firstName) // "Douglas"
+// * > console.log(books[0].author.lastName) // "Adams"
+// */
+
+//[x] create an array of objects that rep books and store it in a variable named 'books'
+//[x] add 5 books
+var books = [
+    {
+        title: "The Fifth Vital",
+        author: {
+            firstName: "Mike",
+            lastName: "Majlak",
+        }
+    },
+    {
+        title: "Catcher and the Rye",
+        author: {
+            firstName: "J.D.",
+            lastName: "Salinger",
+        }
+    },
+    {
+        title: "Lord of the Rings",
+        author: {
+            firstName: "J.R.R.",
+            lastName: "Tolkien",
+        }
+    },
+    {
+        title: "To Kill a Mockingbird",
+        author: {
+            firstName: "Harper",
+            lastName: "Lee",
+        }
+    },
+    {
+        title: "A Passage to India",
+        author: {
+            firstName: "E.M.",
+            lastName: "Forster",
+        }
+    },
+];
+
+console.log(books[0].title + " was written by " + books[0].author.firstName + " " + books[0].author.lastName + ".");
+
+console.log(books[1].title + " was written by " + books[1].author.firstName + " " + books[1].author.lastName + ".");
+
+console.log(books[2].title + " was written by " + books[2].author.firstName + " " + books[2].author.lastName + ".");
+
+console.log(books[3].title + " was written by " + books[3].author.firstName + " " + books[3].author.lastName + ".");
+
+console.log(books[4].title + " was written by " + books[4].author.firstName + " " + books[4].author.lastName + ".");
+
+
+console.log("Exercise 5:");
+
+// Loop through the books array and output the following information about
+// * each book:
+//     * - the book number (use the index of the book in the array)
+// * - the book title
+// * - author's full name (first name + last name)
+// *
+// * Example Console Output:
+//     *
+// *      Book # 1
+// *      Title: The Salmon of Doubt
+// *      Author: Douglas Adams
+// *      ---
+// *      Book # 2
+// *      Title: Walkaway
+// *      Author: Cory Doctorow
+// *      ---
+// *      Book # 3
+// *      Title: A Brief History of Time
+// *      Author: Stephen Hawking
+// *      ---
+// *      ...
+// */
+
+books.forEach(function(book){
+    books.indexOf.forEach(function(index){
+        console.log(index);
+    })
+})
+
+
+
+
+
+
+
+
