@@ -203,19 +203,65 @@
 })();
 
 
+console.log("Exercise 1: ")
 
-//[] create object that has firstName and lastName properties with my name
-//[] store it in a variable named 'person'
+//[x] create object that has firstName and lastName properties with my name
+//[x] store it in a variable named 'person'
 
 var person = {};
 person.firstName = "Parker";
 person.lastName = "Stomm";
 
+console.log(person.firstName);
+console.log(person.lastName);
 
+console.log("Exercise 2: ");
 
+//[x] create a method object sayHello
+//[x] make the console say "Hello from Parker Stomm!"
 
+person.sayHello = function(){
+    console.log("Hello from " + person.firstName + " " +  person.lastName + "!");
+}
+person.sayHello();
 
+console.log("Exercise 3: ");
 
+// write a program to log to the website how much ryan, cameron and george need to pay
+// hebOffer = 12%
+// if itemCost > $200 - they get the discount
+// if false that item cost > 200 - they pay full price
+// cameron bought $180
+// ryan bought $250
+// george bought $320
+// will need to display a line with the name of the person, the amount before discount, the discount(if any), and amount after discount.
 
+// * Uncomment the lines below to create an array of objects where each object
+// * represents one shopper. Use a foreach loop to iterate through the array,
+// * and console.log the relevant messages for each person
+// */
 
+// var shoppers = [
+//     {name: 'Cameron', amount: 180},
+//     {name: 'Ryan', amount: 250},
+//     {name: 'George', amount: 320}
+// ];
 
+// write a program to log to the website how much ryan, cameron and george need to pay
+// hebOffer = 12%
+// if itemCost > $200 - they get the discount
+// if false that item cost > 200 - they pay full price
+// var hebOffer = shoppers.amount * .12;
+//
+// function discountCheck(){
+//     if (shoppers.amount >= 200){
+//         return "Got offer: " + hebOffer;
+//     } else{
+//         return false;
+//     }
+// }
+// console.log(shoppers.name[0], + " " + shoppers.amount, + " " + hebOffer);
+
+console.log("Not done, Will come back to 3.");
+
+console.log("Exercise 4: ");
