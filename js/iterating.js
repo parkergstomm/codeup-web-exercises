@@ -161,3 +161,20 @@ names .forEach(function(secondName){
 names.forEach(function(lastName){
     console.log(names[3] + " is the final name/item in the array.");
 })
+
+function firstName(array){
+    return array[0];
+}
+console.log(firstName(names));
+
+function secondName(array){
+    return array[1];
+}
+
+console.log(secondName(names));
+
+function lastName(array){
+    return array[3];
+}
+
+console.log(lastName(names));

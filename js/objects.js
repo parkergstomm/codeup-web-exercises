@@ -351,11 +351,72 @@ console.log("Exercise 5:");
 // *      ...
 // */
 
-books.forEach(function(book){
-    books.indexOf.forEach(function(index){
-        console.log(index);
-    })
-})
+
+var books = [
+    {
+        index: "Book: 1",
+        title: "The Fifth Vital",
+        author: {
+            firstName: "Mike",
+            lastName: "Majlak",
+        }
+    },
+    {
+        index: "Book: 2",
+        title: "Catcher and the Rye",
+        author: {
+            firstName: "J.D.",
+            lastName: "Salinger",
+        }
+    },
+    {
+        index: "Book: 3",
+        title: "Lord of the Rings",
+        author: {
+            firstName: "J.R.R.",
+            lastName: "Tolkien",
+        }
+    }
+];
+
+for(var i = 0; i < books.length; i++) {
+        var readList = books[i];
+    console.log("Book #" + (i + 1));
+    console.log("Title: " + readList.title);
+    console.log("Author: " + readList.author.firstName + " " + readList.author.lastName);
+}
+
+
+
+
+
+
+
+
+
+
+
+function createBook (title, first, last) {
+    return {
+        title: title,
+        author: {
+            firstName: first,
+            lastName: last
+        }
+    }
+}
+var newBooks = [
+
+    createBook("The Art of Loyalty", "Benedict", "Arnold"),
+    createBook("Common Cents", "Thomas", "Lincoln"),
+    createBook("The Little Giant", "Peter", "Dinklage"),
+    createBook("Bonds of Family", "Jaime", "Lannister"),
+    createBook("Don't Lose Your Head", "Ned", "Stark")
+];
+
+console.log(newBooks);
+
+
 
 
 
