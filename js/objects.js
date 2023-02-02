@@ -234,13 +234,63 @@ console.log("Exercise 3: ");
 // ryan bought $250
 // george bought $320
 // will need to display a line with the name of the person, the amount before discount, the discount(if any), and amount after discount.
+var hebDiscount = .12;
+
+var shoppers = [
+    {name: 'Cameron', amount: 180},
+    {name: 'Ryan', amount: 250},
+    {name: 'George', amount: 320}
+];
 
 
+function shopperPriceAfter(){
+    // var hebDiscount = .12;
+    // var shoppers = [
+    //     {name: 'Cameron', amount: 180},
+    //     {name: 'Ryan', amount: 250},
+    //     {name: 'George', amount: 320}
+    // ];
+    if (shoppers.amount > 200){
+        return shoppers.amount - (hebDiscount * shoppers.amount);
+    } else {
+        return  shoppers.amount;
+    }
+//     shoppers.forEach((function(){
+//         console.log(shoppers.name + ", " + shoppers.amount + ", " + hebDiscount + ", " + shopperPriceAfter());
+// }));
+
+}
+
+shoppers.forEach((function() {
+    console.log(shoppers.name + ", " + shoppers.amount + ", " + hebDiscount + ", " + shopperPriceAfter());
+}));
+// console.log(shoppers.name[0] + ", " + shoppers.amount[0] + ", " + hebDiscount + ", " + 180);
+
+// var hebOffer = .12
 // var shoppers = [
 //     {name: 'Cameron', amount: 180},
 //     {name: 'Ryan', amount: 250},
 //     {name: 'George', amount: 320}
 // ];
+// function applyDiscount(){
+//     var shoppers = [
+//         {name: 'Cameron', amount: 180},
+//         {name: 'Ryan', amount: 250},
+//         {name: 'George', amount: 320}
+//     ];
+//     if (shoppers.amount > 200){
+//         return
+//         var discountApplied = shoppers.amount -(hebOffer * shoppers.amount);
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(shoppers[0] + " " + shoppers.amount[0] + " " + hebOffer + " " + (hebOffer * shoppers.amount[0]));
+
+
+
+
+
 
 // write a program to log to the website how much ryan, cameron and george need to pay
 // hebOffer = 12%
@@ -255,7 +305,7 @@ console.log("Exercise 3: ");
 //         return false;
 //     }
 // }
-// console.log(shoppers.name[0], + " " + shoppers.amount, + " " + hebOffer);
+// console.log(shoppers.name[1] + " " + shoppers.amount, + " " + hebOffer);
 
 console.log("Not done, Will come back to 3.");
 
@@ -382,7 +432,7 @@ for(var i = 0; i < books.length; i++) {
         var bookList = books[i];
     console.log("Book #" + (i + 1));
     console.log("Title: " + bookList.title);
-    console.log("Author: " + bookList.author.firstName + " " + readList.author.lastName);
+    console.log("Author: " + bookList.author.firstName + " " + bookList.author.lastName);
 }
 
 
