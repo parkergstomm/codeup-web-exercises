@@ -6,7 +6,7 @@
         radius: 3,
 
         getArea: function () {
-            // TODO: complete this method
+           Math.PI()
             // hint: area = pi * radius^2
 
             return; // TODO: return the proper value

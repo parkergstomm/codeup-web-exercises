@@ -1,111 +1,111 @@
-// "use strict";
-//
-// var car = {};
-//
-// console.log(typeof car);
-// // "object"
+"use strict";
 
-// "use strict";
-//
-// var car = {};
+var car = {};
+
+console.log(typeof car);
+// "object"
+
+"use strict";
+
+var car = {};
 
 // use dot notation to assign a "make" property
-// car.make = "Toyota";
+car.make = "Toyota";
 
 // use array notation to assign a "model" property
-// car["model"] = "Camry";
+car["model"] = "Camry";
 
 // can also assign properties to an object when creating it
 
-// var car = {
-//     make: "Toyota",
-//     model: "Camry"
-// };
+var car = {
+    make: "Toyota",
+    model: "Camry"
+};
 
 // Accessing Properties on an Object:
 // object properties are accessed in the same way they are set, either via dot notation or array notation.
-// "use strict";
-//
-// var car = {};
-// car.make = "Toyota";
-// car.model = "Camry";
+"use strict";
+
+var car = {};
+car.make = "Toyota";
+car.model = "Camry";
 
 // use array notation to access "make" property
-// console.log("The car make is: " + car["make"]);
+console.log("The car make is: " + car["make"]);
 
 // use dot notation to access "model" property
-// console.log("The car model is: " + car.model);
+console.log("The car model is: " + car.model);
 
 // Nested Values:
 // The value of a property can be any valid value in JavaScript, including arrays, or other objects. This allows us to create complex data structures like the following:
-// let cars = [
-//     {
-//         make: "Toyota",
-//         model: "C-HR",
-//         year: "2018",
-//         color: "Blue",
-//         features: ["Automatic Windows", "Bluetooth", "GPS Navigation", "Dent on the right side"],
-//         owner: {
-//             name: "Parker Stomm",
-//             age: 24
-//         }
-//     },
-//     {
-//         make: "Mazda",
-//         model: "5",
-//         year: "2012",
-//         color: "Silver",
-//         features: ["Automatic Windows", "Great Gas Mileage", "AM/FM Radio", "Bad Alternator"],
-//         owner: {
-//             name: "Brandie Stomm",
-//             age: 24
-//         }
-//     }
-// ];
-//
-// console.log("The first car is a " + cars[0].make + " " + cars[0].model + ".");
-// console.log("The owner of the first car is " + cars[0].owner.name + ", " + "and the owner of the second car is " + cars[1].owner.name + ".");
-//
-// console.log("Here is all of the features for all of the cars: ");
-// cars.forEach(function(car){
-//     car.features.forEach(function(feature){
-//         console.log(feature);
-//     });
-// });
+let cars = [
+    {
+        make: "Toyota",
+        model: "C-HR",
+        year: "2018",
+        color: "Blue",
+        features: ["Automatic Windows", "Bluetooth", "GPS Navigation", "Dent on the right side"],
+        owner: {
+            name: "Parker Stomm",
+            age: 24
+        }
+    },
+    {
+        make: "Mazda",
+        model: "5",
+        year: "2012",
+        color: "Silver",
+        features: ["Automatic Windows", "Great Gas Mileage", "AM/FM Radio", "Bad Alternator"],
+        owner: {
+            name: "Brandie Stomm",
+            age: 24
+        }
+    }
+];
+
+console.log("The first car is a " + cars[0].make + " " + cars[0].model + ".");
+console.log("The owner of the first car is " + cars[0].owner.name + ", " + "and the owner of the second car is " + cars[1].owner.name + ".");
+
+console.log("Here is all of the features for all of the cars: ");
+cars.forEach(function(car){
+    car.features.forEach(function(feature){
+        console.log(feature);
+    });
+});
 
 // Assigning Functionality to an Object
 // Besides having data properties, an object can also have functions, known as methods. Creating a method on a object is much like creating a property, except the property value is a function.
 
-// "use strict";
-//
-// var car = {};
-// car.make = "Toyota";
-// car.model = "C-HR";
+"use strict";
 
-//create a honk method on the car
-// car.honk = function(){
-//     alert("Honk! Honk!");
-// };
+var car = {};
+car.make = "Toyota";
+car.model = "C-HR";
 
-//use the honk method to use the horn
-// car.honk();
+// create a honk method on the car
+car.honk = function(){
+    alert("Honk! Honk!");
+};
+
+// use the honk method to use the horn
+car.honk();
 
 // The 'this' Keyword
 // The 'this' keyword in JavaScript is a bit more complicated than in other languages. In other languages, like PHP or Java, this is simply a reference to the current object. In JavaScript, this can refer to a different object based on how a function is called. However, the intricacies of this are a more advanced topic.
 
-// "use strict";
-//
-// var car = {};
-// car.make = "Toyota";
-// car.model = "C-HR";
+"use strict";
+
+var car = {};
+car.make = "Toyota";
+car.model = "C-HR";
 
 // create a logMakeModel method on the car object
-// car.logMakeModel = function (){
-//     console.log("The Car make/model is: " + this.make + " " + this.model);
-// };
+car.logMakeModel = function (){
+    console.log("The Car make/model is: " + this.make + " " + this.model);
+};
 
 // log the make and model
-// car.logMakeModel();
+car.logMakeModel();
 
 (function() {
     "use strict";
@@ -212,8 +212,7 @@ var person = {};
 person.firstName = "Parker";
 person.lastName = "Stomm";
 
-console.log(person.firstName);
-console.log(person.lastName);
+console.log("The Variable 'person' is equal to after putting it in an Object: " + person.firstName + " " + person.lastName);
 
 console.log("Exercise 2: ");
 
@@ -380,41 +379,12 @@ var books = [
 ];
 
 for(var i = 0; i < books.length; i++) {
-        var readList = books[i];
+        var bookList = books[i];
     console.log("Book #" + (i + 1));
-    console.log("Title: " + readList.title);
-    console.log("Author: " + readList.author.firstName + " " + readList.author.lastName);
+    console.log("Title: " + bookList.title);
+    console.log("Author: " + bookList.author.firstName + " " + readList.author.lastName);
 }
 
-
-
-
-
-
-
-
-
-
-
-function createBook (title, first, last) {
-    return {
-        title: title,
-        author: {
-            firstName: first,
-            lastName: last
-        }
-    }
-}
-var newBooks = [
-
-    createBook("The Art of Loyalty", "Benedict", "Arnold"),
-    createBook("Common Cents", "Thomas", "Lincoln"),
-    createBook("The Little Giant", "Peter", "Dinklage"),
-    createBook("Bonds of Family", "Jaime", "Lannister"),
-    createBook("Don't Lose Your Head", "Ned", "Stark")
-];
-
-console.log(newBooks);
 
 
 
