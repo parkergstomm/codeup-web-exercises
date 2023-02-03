@@ -235,35 +235,45 @@ console.log("Exercise 3: ");
 // george bought $320
 // will need to display a line with the name of the person, the amount before discount, the discount(if any), and amount after discount.
 var hebDiscount = .12;
-
+// var newAmount = hebDiscount - (hebDiscount * shoppers.amount);
 var shoppers = [
     {name: 'Cameron', amount: 180},
     {name: 'Ryan', amount: 250},
     {name: 'George', amount: 320}
 ];
 
+// function discountPrice (input){
+//     if (input > 200){
+//         return newAmount;
+//     } else {
+//         return shoppers.amount[0];
+//     }
+// }
 
-function shopperPriceAfter(){
+function shopperPriceAfter(amount){
     // var hebDiscount = .12;
     // var shoppers = [
     //     {name: 'Cameron', amount: 180},
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
-    if (shoppers.amount > 200){
-        return shoppers.amount - (hebDiscount * shoppers.amount);
+    if (amount > 200){
+        return amount - (hebDiscount * amount);
     } else {
-        return  shoppers.amount;
+        return  amount;
     }
-//     shoppers.forEach((function(){
-//         console.log(shoppers.name + ", " + shoppers.amount + ", " + hebDiscount + ", " + shopperPriceAfter());
-// }));
-
+    // shoppers.forEach((function(){
+    //     console.log(shoppers.name + ", " + shoppers.amount + ", " + hebDiscount + ", " + shopperPriceAfter());
 }
 
-shoppers.forEach((function() {
-    console.log(shoppers.name + ", " + shoppers.amount + ", " + hebDiscount + ", " + shopperPriceAfter());
+
+
+shoppers.forEach((function(shopper) {
+    console.log(shopper.name + ", " + shopper.amount + ", " + hebDiscount + ", " + shopperPriceAfter(shopper.amount));
 }));
+
+
+
 // console.log(shoppers.name[0] + ", " + shoppers.amount[0] + ", " + hebDiscount + ", " + 180);
 
 // var hebOffer = .12

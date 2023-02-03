@@ -25,3 +25,9 @@ function isThree(input){
 function isMultipleOfThree(input){
     return input * 3;
 }
+
+
+
+
+
+
