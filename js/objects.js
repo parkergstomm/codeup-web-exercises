@@ -209,8 +209,8 @@ console.log("Exercise 1: ")
 //[x] store it in a variable named 'person'
 
 var person = {};
-person.firstName = "Parker";
-person.lastName = "Stomm";
+person.firstName = "Parker",
+person.lastName = "Stomm",
 
 console.log("The Variable 'person' is equal to after putting it in an Object: " + person.firstName + " " + person.lastName);
 
@@ -222,6 +222,13 @@ console.log("Exercise 2: ");
 person.sayHello = function(){
     console.log("Hello from " + person.firstName + " " +  person.lastName + "!");
 }
+
+person.sayHello = function(){
+    console.log("Hello from " + this.firstName + " " +  this.lastName + "!");
+}
+
+// in the console.log, the person object is specific, using 'this.' is widely based and refers to itself.
+
 person.sayHello();
 
 console.log("Exercise 3: ");
@@ -242,28 +249,15 @@ var shoppers = [
     {name: 'George', amount: 320}
 ];
 
-// function discountPrice (input){
-//     if (input > 200){
-//         return newAmount;
-//     } else {
-//         return shoppers.amount[0];
-//     }
-// }
 
 function shopperPriceAfter(amount){
-    // var hebDiscount = .12;
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+
     if (amount > 200){
         return amount - (hebDiscount * amount);
     } else {
         return  amount;
     }
-    // shoppers.forEach((function(){
-    //     console.log(shoppers.name + ", " + shoppers.amount + ", " + hebDiscount + ", " + shopperPriceAfter());
+
 }
 
 
@@ -272,8 +266,19 @@ shoppers.forEach((function(shopper) {
     console.log(shopper.name + ", " + shopper.amount + ", " + hebDiscount + ", " + shopperPriceAfter(shopper.amount));
 }));
 
+function discountProgram(shoppers){
+    shoppers.forEach(function (shopper){
+        console.log(shopper.name + " has spent $" + shopper.amount + "!")
 
+        if(shopper.amount >= 200){
+            console.log(shopper.name + " got a discount of " + (shopper.amount * 0.12).toFixed(2) + " and the total amount comes out to $" + (shopper.amount * 0.88).toFixed(2) + "!")
+        } else {
+            console.log("Sorry, no discount for you, " + shopper.name + ".")
+        }
+    })
+}
 
+discountProgram(shoppers);
 // console.log(shoppers.name[0] + ", " + shoppers.amount[0] + ", " + hebDiscount + ", " + 180);
 
 // var hebOffer = .12
@@ -384,6 +389,8 @@ console.log(books[3].title + " was written by " + books[3].author.firstName + " 
 
 console.log(books[4].title + " was written by " + books[4].author.firstName + " " + books[4].author.lastName + ".");
 
+console.log(books);
+
 
 console.log("Exercise 5:");
 
@@ -409,6 +416,12 @@ console.log("Exercise 5:");
 // *      ---
 // *      ...
 // */
+
+books.forEach(function(book, index){
+    console.log ("Book # " + (index + 1));
+    console.log ("Title: " + book.title);
+    console.log ("Author: " + book.author.firstName + " " + book.author.lastName);
+})
 
 
 var books = [
@@ -445,7 +458,21 @@ for(var i = 0; i < books.length; i++) {
     console.log("Author: " + bookList.author.firstName + " " + bookList.author.lastName);
 }
 
+function createBook(title, first, last){
+    return {
+        title: title,
+        author: {
+            firstName: first,
+            lastName: last,
+        }
+    }
+}
 
+var userTitle = prompt("enter title");
+var userFirst = prompt("enter author first name");
+var userlast = prompt("enter author last name");
+
+console.log(createBook(userTitle,userFirst,userlast));
 
 
 
