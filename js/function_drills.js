@@ -23,14 +23,21 @@
 //     }
 // }
 
+// function timesFour(input){
+//     if(!isNaN(parseInt(input))){ // if the parseInt of input is the opposite of isNaN - do the return
+//         return input * 4;
+//     } else { // if not - return false
+//         return false;
+//     }
+// }
+
 function timesFour(input){
-    if(!isNaN(parseInt(input))){ // if the parseInt of input is the opposite of isNaN - do the return
+    if(input == parseInt(input)){ // if the parseInt of input is the opposite of isNaN - do the return
         return input * 4;
     } else { // if not - return false
         return false;
     }
 }
-
 
 
 // Define a function named convertDaysToHours that takes in one input Days. Return the conversion of the number of days into total hours. If the input is not numeric or a numeric string, convertDaysToHours, should return false.
@@ -67,3 +74,38 @@ function convertDaysToHours(Days){
 
 
 
+// create  a function named calculateTax that takes 2 parameters called totalPaid and taxPercent
+
+// if both are numeric or numeric strings, the function should return total with tax added in a string looking like "$xx.xx"
+
+function calculateTax(totalPaid, taxPercent){
+    var finalPrice = totalPaid * (1 + (taxPercent / 100));
+    if(!isNaN(parseInt(totalPaid)) && !isNaN(totalPaid) &&
+    (!isNaN(parseInt(taxPercent)) && !isNaN(taxPercent))){
+        return "$" + finalPrice.toFixed(2);
+    } else {
+        return false;
+    }
+
+}
+
+
+// Classmates code below, just seeing how the others are doing theirs
+
+
+
+// let input = prompt("How much is the total?");
+// let inputOne = prompt("How much is the tax?");
+// function calculateTax (input, inputOne){
+//     input= parseInt(input);
+//     inputOne = parseInt(inputOne);
+//     if (isNaN(input) || isNaN(inputOne)) {
+//         return false;
+//     }
+//     let decimal = inputOne / 100;
+//     let total = input + (input * decimal);
+//     console.log(total);
+//     return total;
+//
+// }
+// console.log(calculateTax(input, inputOne));
