@@ -5,61 +5,67 @@
     <title>Forms Lecture</title>
 </head>
 <body>
-<form method="POST" action="https://request-inspector.glitch.me/">
 
-  <label for="username">Username</label>
-  <input id="username" name="username" type="text">
-  <br>
 
-  <label for="password">Password</label>
-  <input id="password" name="password" type="password">
-  <br>
+<!-- we need specific puzzle pieces; elements for our form -->
+
+<!-- base form element -->
+<!-- number of inputs (username, click to choose a date, radio selection) for oour user to use -->
+<!-- inputs have 'labels' for them -->
+<!-- button to 'submit' form [type attribute set to 'submit']-->
+
+
+<form method="POST" action="https://requestinspector.com/inspect/01grpe61ps51qdn838q3tcmc8r">
+
+  <!--  methods: GET and POST are our main two -->
+<!--  GET = go RETRIEVE value, put QUERY STRINGS into my URL, don't change anything!-->
+<!--  POST = I have information here that I want to send to update something - or CHANGE something-->
+
+<!-- Action and Method: Action is "WHERE AM I GOING"; method is "WHAT AM I DOING WHEN I GET THERE"-->
+<!--  Blank action = send it back to where it came from-->
+
+  <label for="search">Search:</label>
+  <input type="text" name="search" id="search">
+
+
+  <label for="language">Language for search:</label>
+  <input type="text" name="language" id="language">
+
+    <br>
+    <br>
+
+    <label for="comment">Comment</label>
+    <textarea name="comment" id="comment"></textarea>
+
+    <select name="coffee_preference">
+        <option value="light">Light Roast</option>
+        <option value="dark">Dark Roast</option>
+        <option value="espresso">Espresso</option>
+    </select>
+
+
+
+
 
   <input type="submit">
 </form>
 
-<input name="newsletter_signup" value="true" type="checkbox" checked>Sign Up For The Email Newsletter
-<br>
-A <input type="radio" name="quiz_question_1" value="a"><br>
-B <input type="radio" name="quiz_question_1" value="b"><br>
-C <input type="radio" name="quiz_question_1" value="c"><br>
-D <input type="radio" name="quiz_question_1" value="d"><br>
-<br>
-
-<select name="coffee_preference">
-  <option value="light">Light Roast</option>
-  <option value="dark">Dark Roast</option>
-  <option value="espresso">Espresso Blend</option>
-</select>
-
-<form>
-  <input name="the_answer" value="42">
-  <input type="submit">
-</form>
-
-<input type="text" name="username" value="codeup" disabled>
-
-<select name="newsletter_signup">
-  <option disabled value="n">No</option>
-  <option selected value="y">Yes</option>
-</select>
-
-<label for="username">Username</label>
-<input id="username" name="username" type="text">
+<h1>Good ui/ux</h1>
 
 <h2>What kind of phone do you own?</h2>
 <label for="android">
-  Android <input id="android" type="checkbox" name="phones" value="android">
+    Android <input id="android" type="checkbox" name="phones" value="android">
 </label>
 <label for="ios">
-  iOS <input id="ios" type="checkbox" name="phones" value="ios">
+    iOS <input id="ios" type="checkbox" name="phones" value="ios">
 </label>
 <label for="windows">
-  Windows <input id="windows" type="checkbox" name="phones" value="windows">
+    Windows <input id="windows" type="checkbox" name="phones" value="windows">
 </label>
 <label for="other">
-  Other <input id="other" type="checkbox" name="phones" value="other">
+    Other <input id="other" type="checkbox" name="phones" value="other">
 </label>
+
 
 
 </body>
