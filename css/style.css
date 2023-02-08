@@ -1,6 +1,69 @@
+.fancy-header {
+    text-align: center;
+}
 
+h2, h3, h4 {
+    color: black;
+    text-decoration: underline;
+}
 
+body {
+    background-color: grey;
+    background-image: url("business-team-meeting-boardroom.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family:"PT Sans";
 
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    list-style-type: square;
+}
+
+table {
+    background: linear-gradient(to right, white, tan);
+    padding-left: 15px;
+    border-spacing: 30px;
+    font-size: medium;
+    font-family: InaiMathi;
+}
+
+th {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h5 {
+    border: 5px solid black;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+
+}
+
+a:link {
+
+    color:navajowhite;
+}
+
+a:visited {
+    color:orange;
+}
+
+a:hover {
+    color: maroon;
+    transition: 0.5s;
+}
+
+a:active {
+    color:yellow;
+}
 
 
 
