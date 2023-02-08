@@ -38,6 +38,7 @@ table {
 }
 
 a:link {
+
     color:navajowhite;
 }
 
@@ -47,6 +48,7 @@ a:visited {
 
 a:hover {
     color: maroon;
+    transition: 0.5s;
 }
 
 a:active {
