@@ -1,3 +1,56 @@
 .fancy-header {
-    color: purple;
+    color: darkgrey;
+    text-align: center;
+    font-family: "BM Hanna 11yrs Old";
 }
+
+h2, h4{
+    color: #2fff81;
+    text-decoration: underline;
+    font-family: "Hiragino Maru Gothic ProN";
+}
+
+body {
+    background-color: rgba(43,72,102,0.98);
+    font-size: 25px;
+    font-family: "American Typewriter";
+}
+div {
+    background-image: url("http://25.media.tumblr.com/026cb936db593d7794e1bc4716c97492/tumblr_mmlqs773VH1qa178vo1_1280.jpg");
+    background-size: 760px;
+    width: 1520px;
+    height: 300px;
+    border: 10px solid;
+    color: aqua;
+}
+ol {
+    list-style: upper-roman;
+}
+ul {
+    list-style-type: square;
+}
+
+table {
+    padding: 2px;
+    border-spacing: 30px;
+    font-size: medium;
+    font-family: "Yuppy TC";
+}
+
+a:link {
+    color:navajowhite;
+}
+
+a:visited {
+    color:orange;
+}
+
+a:hover {
+    color: maroon;
+}
+
+a:active {
+    color:yellow;
+}
+
+
