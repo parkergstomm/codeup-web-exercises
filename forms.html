@@ -10,56 +10,70 @@
 <form method="GET" action="https://request-inspector.glitch.me/">
 
   <label for="username">Username</label>
-  <input id="username" name="username" type="text">
+  <input id="username" name="username" type="text" placeholder="Enter your email">
 
 
   <label for="password">Password</label>
-  <input id="password" name="password" type="password">
+  <input id="password" name="password" type="password" placeholder="Enter your password">
 
   <br>
   <br>
 
-  <label for="bio">Bio: </label>
-  <textarea name="bio" id="bio"></textarea>
+  <label for="bio">Your Biography: </label>
+  <textarea name="bio" id="bio" placeholder="Enter your bio here"></textarea>
 
-<!--  <label for="hearabout"><h3>How did you hear about us?</h3>-->
+<!--  <h3>How did you hear about us?</h3>-->
 
 <!--  <br>-->
 
-<!--  Billboard <input type="radio" id="hearabout" name="radio-ad-1" value="Billboard"><br>-->
-<!--  Radio Ad. <input type="radio" id="hearabout" name="radio-ad-2" value="Radio Ad."><br>-->
-<!--  Internet Ad. <input type="radio" id="hearabout" name="radio-ad-3" value="Internet Ad."><br>-->
-<!--  Other <input type="radio" id="hearabout" name="radio-ad-4" value="Other"><br>-->
+<!--  Billboard <input type="radio"  name="radio-ad-1" value="Billboard"><br>-->
+<!--  Radio Ad. <input type="radio"  name="radio-ad-2" value="Radio Ad."><br>-->
+<!--  Internet Ad. <input type="radio"  name="radio-ad-3" value="Internet Ad."><br>-->
+<!--  Other <input type="radio"  name="radio-ad-4" value="Other"><br>-->
 
 <!--  </label>-->
 <br>
 
+<!--  <h3>How did you hear about us?</h3>-->
+
+<!--  <input type="radio" id="billboard" name="exposure" value="billboard" checked>-->
+<!--  <label for="billboard">Billboard</label><br>-->
+<!--  <input type="radio" id="Radio-Ad" name="exposure" value="radio-ad">-->
+<!--  <label for="Radio-Ad">Radio Ad.</label><br>-->
+<!--  <input type="radio" id="Internet" name="exposure" value="internet-ad">-->
+<!--  <label for="Internet">Internet Ad.</label><br>-->
+<!--  <input type="radio" id="other" name="exposure" value="other">-->
+<!--  <label for="other">Other</label><br>-->
+
+  <!-- from a UX/UI standpoint, having checkboxes appeal to the user and let them realize that they can click multiple things with 'checkbox' rather than the radio button -->
+
   <h3>How did you hear about us?</h3>
-  <input type="radio" id="billboard" name="exposure-1" value="billboard" checked>
-  <label for="billboard">Billboard</label><br>
-  <input type="radio" id="Radio-Ad" name="exposure-2" value="radio-ad">
-  <label for="Radio-Ad">Radio Ad.</label><br>
-  <input type="radio" id="Internet" name="exposure-3" value="internet-ad">
-  <label for="Internet">Internet Ad.</label><br>
-  <input type="radio" id="other" name="exposure-4" value="other">
-  <label for="other">Other</label><br>
+
+  <label for="billboard">Billboard</label>
+  <input type="checkbox" id="billboard" name="exposure" value="billboard"><br>
+  <label for="Radio-Ad">Radio Ad.</label>
+  <input type="checkbox" id="Radio-Ad" name="exposure" value="radio-ad"><br>
+  <label for="Internet">Internet Ad.</label>
+  <input type="checkbox" id="Internet" name="exposure" value="internet-ad"><br>
+  <label for="other">Other</label>
+  <input type="checkbox" id="other" name="exposure" value="other"><br>
 
 
-  <label for="browser"><h3>What browser are you using?</h3>
 
+  <h3>What browser are you using?</h3>
+
+  <label for="browser"></label>
   <select name="browser" id="browser">
     <option value="googlechrome">Google Chrome</option>
     <option value="firefox">FireFox</option>
     <option value="safari">Safari</option>
-    <option value="windows">Windows</option>
+    <option value="explorer">Internet Explorer</option>
   </select>
 
-  </label>
-
   <br>
   <br>
 
-  <button type="submit">Submit the form</button>
+  <button type="submit">Register</button>
 
 </form>
 

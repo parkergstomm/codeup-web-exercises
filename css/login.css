@@ -62,7 +62,7 @@ fieldset {
     color: #ffffff;
     font-weight: bold;
     /* The border of this element should be 1px, and its color should be light grey */
-    border: 1px #d3d3d3; /*intellij told me to put it like this */
+    border: 1px lightgrey; /*intellij told me to put it like this */
     background-color: #0fb784;
 }
 
@@ -76,7 +76,6 @@ fieldset {
 
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
 
-    calc(100% - 2px)
 
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
