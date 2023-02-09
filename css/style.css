@@ -1,3 +1,9 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+
 .fancy-header {
     text-align: center;
 }
@@ -14,7 +20,6 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    font-family:"PT Sans";
 
 }
 
@@ -35,6 +40,7 @@ table {
 }
 
 th {
+    font-size: 24px;
     font-weight: bold;
     text-decoration: underline;
 }
