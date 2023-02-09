@@ -19,20 +19,38 @@ body, html {
 
 .message-success{
     color: green;
-    background-color: lightgreen;
+    background-color: yellowgreen;
     height: 20px;
     padding: .5em;
     margin-bottom: .7em;
     margin-top: .7em;
     border: 1px solid grey;
-    border-radius: 2px;
+    border-radius: 6px;
 
 }
 
 .message-warning{
+    color: #a6a117;
+    background-color: #fff077;
+    height: 20px;
+    padding: .5em;
+    margin-bottom: .7em;
+    margin-top: .7em;
+    border: 1px solid grey;
+    border-radius: 6px;
+
 
 }
 
 .message-error{
+    color: #700300;
+    background-color: lightcoral;
+    height: 20px;
+    padding: .5em;
+    margin-bottom: .7em;
+    margin-top: .7em;
+    border: 1px solid grey;
+    border-radius: 6px;
+
 
 }
