@@ -1,5 +1,5 @@
 /* selector for id="container" */
-#container {
+#container { /* ids have # */
     margin: 50px auto;
     width: 500px;
     padding: 10px;
@@ -19,7 +19,7 @@ em {
 }
 
 /* selector for all elements with class="article" */
-.article {
+.article { /* classes are '.' */
     clear:both;
 }
 
