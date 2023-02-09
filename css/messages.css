@@ -19,7 +19,7 @@ body, html {
 
 .message-success{
     color: green;
-    background-color:  var(lightgreen;
+    background-color: lightgreen;
     height: 20px;
     padding: .5em;
     margin-bottom: .7em;
